@@ -32,7 +32,7 @@ const template = {
         selector: 'a',
         attribute: 'href'
       },
-      companyName: '.pv-entity__secondary-title',
+      companyName: '.pv-entity__secondary-title:first-child',
       location: '.pv-entity__location span:last-child',
       description: '.pv-entity__description',
       date1: '.pv-entity__date-range span:last-child',
