@@ -24,6 +24,7 @@ module.exports = async (browser, email, password) => {
     .then(async () => {
       logger.info('logged feed page selector found')
       await page.close()
+      await browser.close()
     })
     .catch(async () => {
       logger.warn('successful login element was not found')
