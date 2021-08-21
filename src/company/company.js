@@ -28,6 +28,7 @@ module.exports = async (browser, cookies, url, waitTimeToScrapMs = 500, puppetee
   company.profile = (await scrapSection(page, template.profile))[0];
 
   await page.close();
+  await browser.close();
   logger.info(`finished scraping url: ${url}`);
   
   return company
